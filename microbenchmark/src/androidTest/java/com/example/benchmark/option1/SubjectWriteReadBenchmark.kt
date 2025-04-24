@@ -7,6 +7,8 @@ import androidx.benchmark.junit4.measureRepeated
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.example.benchmark.deleteAllDatabaseFiles
+import com.example.benchmark.getTotalDatabaseSize
 import com.simprints.id.dbschemas.CreateRangesUseCase
 import com.simprints.id.dbschemas.option1.BenchmarkDatabase
 import com.simprints.id.dbschemas.option1.DataGenerator
@@ -43,12 +45,12 @@ class SubjectWriteReadBenchmark {
         val passphrase: ByteArray = "passphrase".toByteArray(Charset.forName("UTF-8"))
         log("Benchmark option 1...")
 
-        context.deleteDatabase("benchmark-option1.db")
+        deleteAllDatabaseFiles(context, "benchmark-option1.db")
         val db =
             Room.databaseBuilder(context, BenchmarkDatabase::class.java, "benchmark-option1.db")
                 .openHelperFactory(SupportOpenHelperFactory(passphrase)).build()
         //log db size without data
-        logDatabaseSize()
+        log(getTotalDatabaseSize(context, "benchmark-option1.db").toString() + " KB")
 
         dao = db.subjectDao()
         var insertTime = measureTimeMillis {
@@ -57,7 +59,7 @@ class SubjectWriteReadBenchmark {
         }
         log("Insert time: $insertTime ms")
         // print db file size in kb
-        logDatabaseSize()
+       log(getTotalDatabaseSize(context, "benchmark-option1.db").toString() + " KB")
 
     }
 
@@ -74,12 +76,18 @@ class SubjectWriteReadBenchmark {
 
         var queryTime = measureTimeMillis {
             ranges.forEach { range ->
-                val result = dao.getSubjectsFiltered(
+                // first get subject ids
+                val subjectIds = dao.getPaginatedSubjectIds(
                     projectId = PROJECT_ID,
                     format = ROC_FORMAT,
                     limit = range.last - range.first,
                     offset = range.first
                 )
+                // then get templates for those subject ids
+                val result = dao.getSubjectsBySubjectIds(ROC_FORMAT,subjectIds)
+                    .groupBy { // group by subjectId to simulate a real-world scenario
+                        it.subjectId
+                    }
                 println("Query result size: ${result.size}")
             }
         }
@@ -93,11 +101,6 @@ class SubjectWriteReadBenchmark {
         log("$countTime, $queryTime")
     }
 
-    fun logDatabaseSize() {
-        val dbFile = context.getDatabasePath("benchmark-option1.db")
-        val dbFileSize = dbFile.length() / 1024 // in KB
-        log("Database file size: $dbFileSize KB")
-    }
 
     private fun log(message: String) {
         Log.i("option1", message)

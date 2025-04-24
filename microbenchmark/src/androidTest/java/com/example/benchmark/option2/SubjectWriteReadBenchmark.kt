@@ -7,6 +7,8 @@ import androidx.benchmark.junit4.measureRepeated
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.example.benchmark.deleteAllDatabaseFiles
+import com.example.benchmark.getTotalDatabaseSize
 import com.simprints.id.dbschemas.CreateRangesUseCase
 import com.simprints.id.dbschemas.option2.BenchmarkDatabase
 import com.simprints.id.dbschemas.option2.DataGenerator
@@ -42,20 +44,20 @@ class SubjectWriteReadBenchmark {
         val passphrase: ByteArray = "passphrase".toByteArray(Charset.forName("UTF-8"))
         log("Benchmark option 2...")
 
-        context.deleteDatabase("benchmark-option2.db")
+        deleteAllDatabaseFiles(context, "benchmark-option2.db")
         val db = Room
             .databaseBuilder(context, BenchmarkDatabase::class.java, "benchmark-option2.db")
             .openHelperFactory(SupportOpenHelperFactory(passphrase))
             .build()
-        logDatabaseSize()
+        log(getTotalDatabaseSize(context, "benchmark-option2.db").toString() + " KB")
+
         dao = db.subjectDao()
         var insertTime = measureTimeMillis {
             dao.insertSubjects(subjects)
         }
         log("Insert time: $insertTime ms")
         // print db file size in kb
-        logDatabaseSize()
-
+        log(getTotalDatabaseSize(context, "benchmark-option2.db").toString() + " KB")
     }
 
 
@@ -99,11 +101,6 @@ class SubjectWriteReadBenchmark {
         log("$countTime, $queryTime")
     }
 
-    fun logDatabaseSize() {
-        val dbFile = context.getDatabasePath("benchmark-option2.db")
-        val dbFileSize = dbFile.length() / 1024 // in KB
-        log("Database file size: $dbFileSize KB")
-    }
 
     private fun log(message: String) {
         Log.i("option2", message)

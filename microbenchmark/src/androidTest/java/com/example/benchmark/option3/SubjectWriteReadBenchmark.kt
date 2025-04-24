@@ -7,6 +7,8 @@ import androidx.benchmark.junit4.measureRepeated
 import androidx.room.Room
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
+import com.example.benchmark.deleteAllDatabaseFiles
+import com.example.benchmark.getTotalDatabaseSize
 import com.simprints.id.dbschemas.CreateRangesUseCase
 import com.simprints.id.dbschemas.option3.BenchmarkDatabase
 import com.simprints.id.dbschemas.option3.DataGenerator
@@ -42,12 +44,13 @@ class SubjectWriteReadBenchmark {
         val passphrase: ByteArray = "passphrase".toByteArray(Charset.forName("UTF-8"))
         log("Benchmark option 3...")
 
-        context.deleteDatabase("benchmark-option3.db")
+        deleteAllDatabaseFiles(context, "benchmark-option3.db")
         val db = Room
             .databaseBuilder(context, BenchmarkDatabase::class.java, "benchmark-option3.db")
             .openHelperFactory(SupportOpenHelperFactory(passphrase))
             .build()
-        logDatabaseSize()
+        log(getTotalDatabaseSize(context, "benchmark-option3.db").toString() + " KB")
+
         dao = db.subjectDao()
         var insertTime = measureTimeMillis {
             dao.insertSubjects(subjectsTemplatesPair.first)
@@ -55,7 +58,8 @@ class SubjectWriteReadBenchmark {
             dao.insertFormatLookup(lookups)
         }
         log("Insert time: $insertTime ms")
-        logDatabaseSize()
+        log(getTotalDatabaseSize(context, "benchmark-option3.db").toString() + " KB")
+
     }
 
 

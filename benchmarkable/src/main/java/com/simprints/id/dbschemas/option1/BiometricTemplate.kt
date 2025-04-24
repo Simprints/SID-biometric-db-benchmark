@@ -12,11 +12,7 @@ import androidx.room.PrimaryKey
         childColumns = ["subjectId"],
         onDelete = ForeignKey.CASCADE
     )],
-
-    indices = [Index(value = ["format", "subjectId"]),
-    Index(value = ["subjectId"])],
-
-
+    indices = [Index(value = ["format", "subjectId"]), Index(value = ["subjectId"])],
 )
 @Suppress("ArrayInDataClass")
 data class BiometricTemplate(

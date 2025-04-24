@@ -6,9 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(
     indices = [
-
         Index(value = ["projectId", "format", "createdAt", "subjectId"]),
-
     ]
 )
 @Suppress("ArrayInDataClass")

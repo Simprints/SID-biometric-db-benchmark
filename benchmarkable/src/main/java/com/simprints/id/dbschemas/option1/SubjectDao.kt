@@ -4,7 +4,6 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import androidx.room.Transaction
 
 @Dao
 interface SubjectDao {
@@ -13,22 +12,6 @@ interface SubjectDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
      fun insertTemplates(templates: List<BiometricTemplate>)
-
-    @Transaction
-    @Query("""
-        SELECT Subject.subjectId,BiometricTemplate.*  FROM Subject
-        Inner JOIN BiometricTemplate ON Subject.subjectId = BiometricTemplate.subjectId
-        WHERE projectId = :projectId        
-          AND format = :format
-          order by Subject.subjectId
-        LIMIT :limit OFFSET :offset
-    """)
-    fun getSubjectsFiltered(
-        projectId: String,
-        format: String,
-        limit: Int,
-        offset: Int
-    ): List<SubjectWithTemplates>
 
     @Query("""
         SELECT COUNT(*) FROM (
@@ -44,4 +27,26 @@ interface SubjectDao {
         format: String,
 
     ): Int
+    @Query(
+        """
+    SELECT * FROM BiometricTemplate 
+    WHERE format =:format and subjectId IN (:subjectIds)
+    """
+    )
+    fun getSubjectsBySubjectIds( format: String,subjectIds: List<String>): List<BiometricTemplate>
+    @Query(
+        """
+    SELECT distinct Subject.subjectId 
+    FROM Subject Inner JOIN BiometricTemplate ON Subject.subjectId = BiometricTemplate.subjectId
+    WHERE Subject.projectId = :projectId AND BiometricTemplate.format = :format
+    ORDER BY createdAt
+    LIMIT :limit OFFSET :offset
+    """
+    )
+    fun getPaginatedSubjectIds(
+        projectId: String,
+        format: String,
+        limit: Int,
+        offset: Int
+    ): List<String>
 }

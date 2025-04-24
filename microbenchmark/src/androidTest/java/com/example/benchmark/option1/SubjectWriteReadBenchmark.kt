@@ -43,6 +43,11 @@ class SubjectWriteReadBenchmark {
         val passphrase: ByteArray = "passphrase".toByteArray(Charset.forName("UTF-8"))
         log("Benchmark option 1...")
 
+        // I am 90% sure that by default the underlying sqlite3 database uses the WRITE_AHEAD_LOGGING journal mode
+        // which means that it is not self-contained in a single .db file, but there are actually two additional files:
+        // benchmark-optionX.db-shm and benchmark-optionX.db-wal
+        // You might want to delete these too for a proper reset
+        // I wrote more about this here: https://github.com/Simprints/sqlite-experiments/blob/main/all_schemas_match_android_sqlite_defaults.sql
         context.deleteDatabase("benchmark-option1.db")
         val db =
             Room.databaseBuilder(context, BenchmarkDatabase::class.java, "benchmark-option1.db")
@@ -93,6 +98,8 @@ class SubjectWriteReadBenchmark {
         log("$countTime, $queryTime")
     }
 
+    // See this stackoverflow post on why this gives you inaccurate measurements of the database size:
+    // https://stackoverflow.com/questions/61988697/how-do-i-get-room-database-size
     fun logDatabaseSize() {
         val dbFile = context.getDatabasePath("benchmark-option1.db")
         val dbFileSize = dbFile.length() / 1024 // in KB

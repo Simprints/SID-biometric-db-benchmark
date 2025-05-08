@@ -1,4 +1,4 @@
-package com.simprints.id.dbschemas.option2
+package com.simprints.id.dbschemas.option2b
 
 import java.util.UUID
 import kotlin.random.Random

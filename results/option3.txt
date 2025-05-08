@@ -1,0 +1,630 @@
+05-08 20:37:09.014 29014 29034 I TestRunner: started: insertAndQuery5kSubjects(com.example.benchmark.option3.BiometricTemplateWriteReadBenchmark)
+05-08 20:37:10.489 29014 29034 I option3 : Benchmark option 3...
+05-08 20:37:10.494 29014 29034 I option3 : 0 KB
+05-08 20:37:12.944 29014 29034 I option3 : Insert time: 2450 ms
+05-08 20:37:12.945 29014 29034 I option3 : 25452 KB
+05-08 20:37:13.801 29014 29034 D Benchmark: -- Running com.example.benchmark.option3.BiometricTemplateWriteReadBenchmark#insertAndQuery5kSubjects --
+05-08 20:37:15.163 29014 29034 I option3 : Count result: 10000
+05-08 20:37:15.192 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.226 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.271 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:15.335 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:15.397 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:15.397 29014 29034 I option3 : 14, 234
+05-08 20:37:15.406 29014 29034 I option3 : Count result: 10000
+05-08 20:37:15.428 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.457 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.501 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:15.564 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:15.628 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:15.628 29014 29034 I option3 : 8, 222
+05-08 20:37:15.637 29014 29034 I option3 : Count result: 10000
+05-08 20:37:15.660 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.691 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.737 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:15.800 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:15.863 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:15.863 29014 29034 I option3 : 8, 226
+05-08 20:37:15.871 29014 29034 I option3 : Count result: 10000
+05-08 20:37:15.895 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.924 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:15.972 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:16.036 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.101 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.101 29014 29034 I option3 : 8, 230
+05-08 20:37:16.110 29014 29034 I option3 : Count result: 10000
+05-08 20:37:16.135 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.164 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.212 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:16.276 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.340 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.340 29014 29034 I option3 : 9, 230
+05-08 20:37:16.349 29014 29034 I option3 : Count result: 10000
+05-08 20:37:16.372 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.401 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.448 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:16.513 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.581 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.581 29014 29034 I option3 : 8, 232
+05-08 20:37:16.589 29014 29034 I option3 : Count result: 10000
+05-08 20:37:16.613 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.642 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.689 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:16.753 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.819 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:16.819 29014 29034 I option3 : 8, 230
+05-08 20:37:16.828 29014 29034 I option3 : Count result: 10000
+05-08 20:37:16.851 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.882 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:16.928 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:16.994 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.059 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.059 29014 29034 I option3 : 8, 231
+05-08 20:37:17.067 29014 29034 I option3 : Count result: 10000
+05-08 20:37:17.091 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.122 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.169 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:17.234 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.300 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.300 29014 29034 I option3 : 8, 233
+05-08 20:37:17.308 29014 29034 I option3 : Count result: 10000
+05-08 20:37:17.332 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.364 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.411 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:17.478 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.544 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.544 29014 29034 I option3 : 8, 236
+05-08 20:37:17.552 29014 29034 I option3 : Count result: 10000
+05-08 20:37:17.577 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.609 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.656 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:17.724 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.791 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:17.791 29014 29034 I option3 : 8, 239
+05-08 20:37:17.799 29014 29034 I option3 : Count result: 10000
+05-08 20:37:17.823 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.853 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:17.900 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:17.967 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.033 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.033 29014 29034 I option3 : 8, 234
+05-08 20:37:18.041 29014 29034 I option3 : Count result: 10000
+05-08 20:37:18.067 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.097 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.147 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:18.212 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.279 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.279 29014 29034 I option3 : 8, 238
+05-08 20:37:18.288 29014 29034 I option3 : Count result: 10000
+05-08 20:37:18.313 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.343 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.391 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:18.458 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.526 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.526 29014 29034 I option3 : 8, 238
+05-08 20:37:18.535 29014 29034 I option3 : Count result: 10000
+05-08 20:37:18.559 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.590 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.641 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:18.706 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.774 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:18.774 29014 29034 I option3 : 8, 239
+05-08 20:37:18.783 29014 29034 I option3 : Count result: 10000
+05-08 20:37:18.808 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.839 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:18.887 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:18.955 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.024 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.024 29014 29034 I option3 : 8, 241
+05-08 20:37:19.032 29014 29034 I option3 : Count result: 10000
+05-08 20:37:19.057 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.088 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.138 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:19.207 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.275 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.275 29014 29034 I option3 : 8, 243
+05-08 20:37:19.284 29014 29034 I option3 : Count result: 10000
+05-08 20:37:19.308 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.340 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.388 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:19.455 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.526 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.526 29014 29034 I option3 : 8, 242
+05-08 20:37:19.534 29014 29034 I option3 : Count result: 10000
+05-08 20:37:19.559 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.589 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.638 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:19.704 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.771 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:19.771 29014 29034 I option3 : 8, 237
+05-08 20:37:19.780 29014 29034 I option3 : Count result: 10000
+05-08 20:37:19.804 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.835 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:19.882 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:19.949 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.016 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.016 29014 29034 I option3 : 8, 236
+05-08 20:37:20.024 29014 29034 I option3 : Count result: 10000
+05-08 20:37:20.049 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.080 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.126 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:20.195 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.263 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.263 29014 29034 I option3 : 8, 239
+05-08 20:37:20.271 29014 29034 I option3 : Count result: 10000
+05-08 20:37:20.296 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.326 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.376 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:20.444 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.514 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.514 29014 29034 I option3 : 8, 243
+05-08 20:37:20.522 29014 29034 I option3 : Count result: 10000
+05-08 20:37:20.548 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.580 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.628 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:20.696 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.766 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:20.766 29014 29034 I option3 : 8, 244
+05-08 20:37:20.775 29014 29034 I option3 : Count result: 10000
+05-08 20:37:20.800 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.830 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:20.878 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:20.946 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.013 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.013 29014 29034 I option3 : 9, 238
+05-08 20:37:21.022 29014 29034 I option3 : Count result: 10000
+05-08 20:37:21.048 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.079 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.128 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:21.196 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.264 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.264 29014 29034 I option3 : 8, 242
+05-08 20:37:21.273 29014 29034 I option3 : Count result: 10000
+05-08 20:37:21.297 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.328 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.375 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:21.442 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.510 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.510 29014 29034 I option3 : 8, 237
+05-08 20:37:21.518 29014 29034 I option3 : Count result: 10000
+05-08 20:37:21.543 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.575 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.623 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:21.690 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.757 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:21.757 29014 29034 I option3 : 8, 239
+05-08 20:37:21.766 29014 29034 I option3 : Count result: 10000
+05-08 20:37:21.790 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.821 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:21.869 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:21.936 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.003 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.003 29014 29034 I option3 : 8, 237
+05-08 20:37:22.012 29014 29034 I option3 : Count result: 10000
+05-08 20:37:22.037 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.069 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.118 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:22.184 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.251 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.251 29014 29034 I option3 : 8, 239
+05-08 20:37:22.260 29014 29034 I option3 : Count result: 10000
+05-08 20:37:22.284 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.315 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.364 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:22.432 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.500 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.500 29014 29034 I option3 : 8, 240
+05-08 20:37:22.510 29014 29034 I option3 : Count result: 10000
+05-08 20:37:22.535 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.566 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.614 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:22.681 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.749 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.749 29014 29034 I option3 : 9, 239
+05-08 20:37:22.757 29014 29034 I option3 : Count result: 10000
+05-08 20:37:22.784 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.813 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:22.861 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:22.928 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.996 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:22.996 29014 29034 I option3 : 8, 239
+05-08 20:37:23.005 29014 29034 I option3 : Count result: 10000
+05-08 20:37:23.030 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.061 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.109 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:23.178 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.247 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.247 29014 29034 I option3 : 8, 242
+05-08 20:37:23.255 29014 29034 I option3 : Count result: 10000
+05-08 20:37:23.280 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.311 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.360 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:23.429 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.497 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.497 29014 29034 I option3 : 8, 242
+05-08 20:37:23.505 29014 29034 I option3 : Count result: 10000
+05-08 20:37:23.532 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.564 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.611 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:23.680 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.748 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.748 29014 29034 I option3 : 8, 243
+05-08 20:37:23.756 29014 29034 I option3 : Count result: 10000
+05-08 20:37:23.781 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.812 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:23.860 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:23.927 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.995 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:23.995 29014 29034 I option3 : 8, 239
+05-08 20:37:24.004 29014 29034 I option3 : Count result: 10000
+05-08 20:37:24.029 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.062 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.112 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:24.179 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:24.248 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:24.248 29014 29034 I option3 : 8, 244
+05-08 20:37:24.256 29014 29034 I option3 : Count result: 10000
+05-08 20:37:24.282 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.313 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.363 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:24.433 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:24.501 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:24.502 29014 29034 I option3 : 8, 245
+05-08 20:37:24.510 29014 29034 I option3 : Count result: 10000
+05-08 20:37:24.536 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.567 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.615 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:24.682 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:24.751 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:24.751 29014 29034 I option3 : 8, 241
+05-08 20:37:24.760 29014 29034 I option3 : Count result: 10000
+05-08 20:37:24.785 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.819 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:24.866 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:24.934 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.001 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.001 29014 29034 I option3 : 8, 241
+05-08 20:37:25.010 29014 29034 I option3 : Count result: 10000
+05-08 20:37:25.035 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.067 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.115 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:25.182 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.250 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.250 29014 29034 I option3 : 8, 240
+05-08 20:37:25.259 29014 29034 I option3 : Count result: 10000
+05-08 20:37:25.285 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.315 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.364 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:25.431 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.500 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.500 29014 29034 I option3 : 8, 241
+05-08 20:37:25.509 29014 29034 I option3 : Count result: 10000
+05-08 20:37:25.536 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.568 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.617 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:25.684 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.752 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:25.752 29014 29034 I option3 : 8, 243
+05-08 20:37:25.761 29014 29034 I option3 : Count result: 10000
+05-08 20:37:25.786 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.816 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:25.865 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:25.933 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.002 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.002 29014 29034 I option3 : 8, 241
+05-08 20:37:26.011 29014 29034 I option3 : Count result: 10000
+05-08 20:37:26.036 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.068 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.115 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:26.182 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.251 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.251 29014 29034 I option3 : 8, 240
+05-08 20:37:26.260 29014 29034 I option3 : Count result: 10000
+05-08 20:37:26.284 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.314 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.362 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:26.431 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.498 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.499 29014 29034 I option3 : 8, 239
+05-08 20:37:26.507 29014 29034 I option3 : Count result: 10000
+05-08 20:37:26.532 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.565 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.612 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:26.679 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.747 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.747 29014 29034 I option3 : 8, 240
+05-08 20:37:26.756 29014 29034 I option3 : Count result: 10000
+05-08 20:37:26.781 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.812 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:26.862 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:26.929 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.996 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:26.996 29014 29034 I option3 : 8, 240
+05-08 20:37:27.006 29014 29034 I option3 : Count result: 10000
+05-08 20:37:27.032 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.065 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.112 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:27.180 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.247 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.248 29014 29034 I option3 : 9, 242
+05-08 20:37:27.256 29014 29034 I option3 : Count result: 10000
+05-08 20:37:27.281 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.313 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.361 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:27.429 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.496 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.496 29014 29034 I option3 : 8, 240
+05-08 20:37:27.505 29014 29034 I option3 : Count result: 10000
+05-08 20:37:27.531 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.563 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.611 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:27.679 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.747 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.747 29014 29034 I option3 : 8, 242
+05-08 20:37:27.756 29014 29034 I option3 : Count result: 10000
+05-08 20:37:27.781 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.812 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:27.861 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:27.928 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.996 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:27.996 29014 29034 I option3 : 8, 240
+05-08 20:37:28.004 29014 29034 I option3 : Count result: 10000
+05-08 20:37:28.030 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.062 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.110 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:28.177 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.246 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.246 29014 29034 I option3 : 8, 242
+05-08 20:37:28.254 29014 29034 I option3 : Count result: 10000
+05-08 20:37:28.279 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.312 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.361 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:28.429 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.498 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.498 29014 29034 I option3 : 8, 244
+05-08 20:37:28.507 29014 29034 I option3 : Count result: 10000
+05-08 20:37:28.532 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.565 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.612 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:28.682 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.749 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.749 29014 29034 I option3 : 9, 242
+05-08 20:37:28.757 29014 29034 I option3 : Count result: 10000
+05-08 20:37:28.783 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.814 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:28.863 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:28.932 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.999 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:28.999 29014 29034 I option3 : 8, 242
+05-08 20:37:29.008 29014 29034 I option3 : Count result: 10000
+05-08 20:37:29.033 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.067 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.115 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:29.184 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:29.254 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:29.254 29014 29034 I option3 : 8, 246
+05-08 20:37:29.263 29014 29034 I option3 : Count result: 10000
+05-08 20:37:29.289 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.321 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.368 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:29.437 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:29.505 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:29.505 29014 29034 I option3 : 8, 242
+05-08 20:37:29.514 29014 29034 I option3 : Count result: 10000
+05-08 20:37:29.541 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.573 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.622 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:29.689 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:29.758 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:29.758 29014 29034 I option3 : 9, 244
+05-08 20:37:29.767 29014 29034 I option3 : Count result: 10000
+05-08 20:37:29.792 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.822 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:29.872 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:29.940 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.008 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.008 29014 29034 I option3 : 8, 241
+05-08 20:37:30.017 29014 29034 I option3 : Count result: 10000
+05-08 20:37:30.042 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.075 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.123 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:30.191 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.260 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.260 29014 29034 I option3 : 8, 243
+05-08 20:37:30.269 29014 29034 I option3 : Count result: 10000
+05-08 20:37:30.293 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.325 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.373 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:30.440 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.508 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.508 29014 29034 I option3 : 8, 239
+05-08 20:37:30.517 29014 29034 I option3 : Count result: 10000
+05-08 20:37:30.544 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.576 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.625 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:30.692 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.762 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:30.762 29014 29034 I option3 : 9, 245
+05-08 20:37:30.771 29014 29034 I option3 : Count result: 10000
+05-08 20:37:30.795 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.828 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:30.877 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:30.945 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.012 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.012 29014 29034 I option3 : 8, 241
+05-08 20:37:31.022 29014 29034 I option3 : Count result: 10000
+05-08 20:37:31.049 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.081 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.129 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:31.197 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.266 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.266 29014 29034 I option3 : 9, 244
+05-08 20:37:31.275 29014 29034 I option3 : Count result: 10000
+05-08 20:37:31.299 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.331 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.379 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:31.448 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.515 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.515 29014 29034 I option3 : 8, 240
+05-08 20:37:31.524 29014 29034 I option3 : Count result: 10000
+05-08 20:37:31.551 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.584 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.631 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:31.700 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.769 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:31.769 29014 29034 I option3 : 8, 245
+05-08 20:37:31.777 29014 29034 I option3 : Count result: 10000
+05-08 20:37:31.802 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.836 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:31.884 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:31.952 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.022 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.022 29014 29034 I option3 : 8, 245
+05-08 20:37:32.031 29014 29034 I option3 : Count result: 10000
+05-08 20:37:32.056 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.088 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.140 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:32.209 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.278 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.278 29014 29034 I option3 : 8, 247
+05-08 20:37:32.286 29014 29034 I option3 : Count result: 10000
+05-08 20:37:32.311 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.341 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.391 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:32.460 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.528 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.528 29014 29034 I option3 : 8, 242
+05-08 20:37:32.536 29014 29034 I option3 : Count result: 10000
+05-08 20:37:32.562 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.595 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.642 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:32.710 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.778 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:32.778 29014 29034 I option3 : 8, 242
+05-08 20:37:32.786 29014 29034 I option3 : Count result: 10000
+05-08 20:37:32.811 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.843 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:32.891 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:32.959 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.028 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.028 29014 29034 I option3 : 8, 242
+05-08 20:37:33.038 29014 29034 I option3 : Count result: 10000
+05-08 20:37:33.064 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.096 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.144 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:33.214 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.282 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.282 29014 29034 I option3 : 10, 244
+05-08 20:37:33.291 29014 29034 I option3 : Count result: 10000
+05-08 20:37:33.316 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.347 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.396 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:33.465 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.534 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.534 29014 29034 I option3 : 8, 243
+05-08 20:37:33.542 29014 29034 I option3 : Count result: 10000
+05-08 20:37:33.569 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.601 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.650 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:33.717 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.787 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:33.787 29014 29034 I option3 : 8, 245
+05-08 20:37:33.795 29014 29034 I option3 : Count result: 10000
+05-08 20:37:33.820 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.851 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:33.900 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:33.969 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.037 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.037 29014 29034 I option3 : 8, 242
+05-08 20:37:34.045 29014 29034 I option3 : Count result: 10000
+05-08 20:37:34.072 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.104 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.152 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:34.220 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.290 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.290 29014 29034 I option3 : 8, 244
+05-08 20:37:34.298 29014 29034 I option3 : Count result: 10000
+05-08 20:37:34.322 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.354 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.403 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:34.471 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.541 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.541 29014 29034 I option3 : 8, 243
+05-08 20:37:34.550 29014 29034 I option3 : Count result: 10000
+05-08 20:37:34.579 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.608 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.658 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:34.725 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.794 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:34.794 29014 29034 I option3 : 8, 244
+05-08 20:37:34.803 29014 29034 I option3 : Count result: 10000
+05-08 20:37:34.828 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.859 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:34.908 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:34.977 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.046 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.046 29014 29034 I option3 : 8, 243
+05-08 20:37:35.054 29014 29034 I option3 : Count result: 10000
+05-08 20:37:35.081 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:35.112 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:35.163 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:35.231 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.300 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.300 29014 29034 I option3 : 8, 246
+05-08 20:37:35.309 29014 29034 I option3 : Count result: 10000
+05-08 20:37:35.334 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:35.365 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:35.416 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:35.483 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.551 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.551 29014 29034 I option3 : 9, 242
+05-08 20:37:35.560 29014 29034 I option3 : Count result: 10000
+05-08 20:37:35.585 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:35.617 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:35.668 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:35.736 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.805 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:35.805 29014 29034 I option3 : 8, 245
+05-08 20:37:35.896 29014 29034 I option3 : Count result: 10000
+05-08 20:37:36.000 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:36.075 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:36.200 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:36.331 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:36.456 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:36.456 29014 29034 I option3 : 10, 560
+05-08 20:37:36.742 29014 29034 I option3 : Count result: 10000
+05-08 20:37:36.772 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:36.806 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:36.853 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:36.920 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:36.989 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:36.989 29014 29034 I option3 : 10, 247
+05-08 20:37:37.015 29014 29034 I option3 : Count result: 10000
+05-08 20:37:37.042 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.073 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.123 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:37.193 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:37.263 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:37.263 29014 29034 I option3 : 10, 247
+05-08 20:37:37.271 29014 29034 I option3 : Count result: 10000
+05-08 20:37:37.297 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.328 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.376 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:37.443 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:37.512 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:37.512 29014 29034 I option3 : 8, 241
+05-08 20:37:37.534 29014 29034 I option3 : Count result: 10000
+05-08 20:37:37.559 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.591 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.639 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:37.705 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:37.775 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:37.775 29014 29034 I option3 : 9, 241
+05-08 20:37:37.783 29014 29034 I option3 : Count result: 10000
+05-08 20:37:37.808 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.840 29014 29034 I option3 : Query result size: 1000 subjects, 2000 templates
+05-08 20:37:37.890 29014 29034 I option3 : Query result size: 2000 subjects, 4000 templates
+05-08 20:37:37.957 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:38.026 29014 29034 I option3 : Query result size: 3000 subjects, 6000 templates
+05-08 20:37:38.026 29014 29034 I option3 : 8, 243
+05-08 20:37:38.973 29014 29034 I TestRunner: finished: insertAndQuery5kSubjects(com.example.benchmark.option3.BiometricTemplateWriteReadBenchmark)

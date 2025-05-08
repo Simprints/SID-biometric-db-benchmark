@@ -10,8 +10,7 @@ import androidx.room.PrimaryKey
     ]
 )
 @Suppress("ArrayInDataClass")
-
-data class Subject(
+data class BiometricTemplate(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val subjectId: String,
     val projectId: String,

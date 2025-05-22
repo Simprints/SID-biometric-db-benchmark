@@ -10,12 +10,15 @@ import androidx.test.platform.app.InstrumentationRegistry
 import com.example.benchmark.deleteAllDatabaseFiles
 import com.example.benchmark.getTotalDatabaseSize
 import com.simprints.id.dbschemas.CreateRangesUseCase
+import com.simprints.id.dbschemas.TestingParams.Companion.NUMBER_OF_ITERATIONS
+import com.simprints.id.dbschemas.TestingParams.Companion.NUMBER_OF_SUBJECTS
 import com.simprints.id.dbschemas.option3.BenchmarkDatabase
 import com.simprints.id.dbschemas.option3.DataGenerator
 import com.simprints.id.dbschemas.option3.DataGenerator.PROJECT_ID
 import com.simprints.id.dbschemas.option3.DataGenerator.ROC_FORMAT
 import com.simprints.id.dbschemas.option3.SubjectDao
 import net.zetetic.database.sqlcipher.SupportOpenHelperFactory
+import org.junit.After
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -38,40 +41,36 @@ class BiometricTemplateWriteReadBenchmark {
         } catch (_: UnsatisfiedLinkError) {
             println("Library not found")
         }
-        val subjectsTemplatesPair =
-            DataGenerator.generateSubjectsAndTemplates(10_000) // Generate 10,000 subjects = 40,000 records as each subject has 4 templates
-        val lookups = DataGenerator.generateLookup(subjectsTemplatesPair.first)
         val passphrase: ByteArray = "passphrase".toByteArray(Charset.forName("UTF-8"))
-        log("Benchmark option 3...")
+        log("Benchmark option 3 with $NUMBER_OF_SUBJECTS ...")
 
         deleteAllDatabaseFiles(context, "benchmark-option3.db")
         val db = Room
             .databaseBuilder(context, BenchmarkDatabase::class.java, "benchmark-option3.db")
             .openHelperFactory(SupportOpenHelperFactory(passphrase))
             .build()
-        log(getTotalDatabaseSize(context, "benchmark-option3.db").toString() + " KB")
-
         dao = db.subjectDao()
         val insertTime = measureTimeMillis {
-            dao.insertSubjects(subjectsTemplatesPair.first)
-            dao.insertTemplates(subjectsTemplatesPair.second)
-            dao.insertFormatLookup(lookups)
+            DataGenerator.generateAndInsertSubjectsAndTemplates(NUMBER_OF_SUBJECTS, dao)
         }
         log("Insert time: $insertTime ms")
-        log(getTotalDatabaseSize(context, "benchmark-option3.db").toString() + " KB")
+        log("DB size: ${getTotalDatabaseSize(context, "benchmark-option3.db")}KB")
     }
 
+    @After
+    fun tearDown() {
+        deleteAllDatabaseFiles(context, "benchmark-option3.db")
+    }
+
+    var iterations = 0
 
     @Test
     fun insertAndQuery5kSubjects() = benchmarkRule.measureRepeated {
         val count = measureTimedValue {
             dao.countDistinctSubjects(projectId = PROJECT_ID, format = ROC_FORMAT)
-
         }
-        log("Count result: ${count.value}")
-
+        println("Count result: ${count.value}")
         val ranges = createRanges(count.value)
-
         val queryTime = measureTimeMillis {
             ranges.forEach { range ->
                 val result = dao
@@ -84,25 +83,21 @@ class BiometricTemplateWriteReadBenchmark {
                     .groupBy { // group by subjectId to simulate a real-world scenario
                         it.subjectId
                     }
-                log(
-                    "Query result size: ${result.size} subjects, ${
-                        result.values.flatten().count()
-                    } templates"
-                )
+                println("Query result size: ${result.size} subjects")
             }
         }
         logPerformanceMetrics(
             queryTime = queryTime,
             countTime = count.duration.inWholeMilliseconds
         )
+        iterations++
+        if (iterations > NUMBER_OF_ITERATIONS) {
+            throw Exception("Reached number of iterations")
+        }
 
     }
 
-
-    private fun logPerformanceMetrics(
-        queryTime: Long,
-        countTime: Long
-    ) {
+    private fun logPerformanceMetrics(queryTime: Long, countTime: Long) {
         log("$countTime, $queryTime")
     }
 
@@ -116,4 +111,3 @@ class BiometricTemplateWriteReadBenchmark {
         Log.i("option3", message)
     }
 }
-

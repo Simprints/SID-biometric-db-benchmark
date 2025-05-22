@@ -29,28 +29,20 @@ interface BiometricTemplateDao {
             SELECT * 
             FROM BiometricTemplate
             WHERE 
-                subjectId IN (:subjectIds)
-                AND format = :format
+                subjectId IN (
+                    SELECT DISTINCT subjectId 
+                    FROM BiometricTemplate
+                    WHERE projectId = :projectId AND format = :format
+                    ORDER BY subjectId
+                    LIMIT :limit OFFSET :offset
+                ) 
+                AND format = :format         
         """
     )
-    fun getBiometricTemplatesBySubjectIds(
-        format: String,
-        subjectIds: List<String>
-    ): List<BiometricTemplate>
-
-    @Query(
-        """
-            SELECT DISTINCT subjectId 
-            FROM BiometricTemplate
-            WHERE projectId = :projectId AND format = :format
-            ORDER BY createdAt
-            LIMIT :limit OFFSET :offset
-        """
-    )
-    fun getPaginatedSubjectIds(
+    fun getBiometricTemplatesPaginatedBySubjects(
         projectId: String,
         format: String,
         limit: Int,
         offset: Int
-    ): List<String>
+    ): List<BiometricTemplate>
 }

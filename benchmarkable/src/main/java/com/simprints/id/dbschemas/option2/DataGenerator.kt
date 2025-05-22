@@ -4,10 +4,10 @@ import java.util.UUID
 import kotlin.random.Random
 
 object DataGenerator {
-    fun generateBiometricTemplates(n: Int): List<BiometricTemplate> {
-
+    fun generateAndInsertBiometricTemplates(n: Int, dao: BiometricTemplateDao) {
         val templates = mutableListOf<BiometricTemplate>()
         repeat(n) {
+
             val subjectId = UUID.randomUUID().toString()
             val projectId = PROJECT_ID
             val moduleId = MODULE_ID
@@ -45,9 +45,18 @@ object DataGenerator {
                     )
                 )
             }
+            // insert every 5000 subjects and clear the list
+            if (it % 5000 == 0) {
+                dao.insert(templates)
+                templates.clear()
+            }
         }
-        return templates
+        // insert remaining templates
+        if (templates.isNotEmpty()) {
+            dao.insert(templates)
+        }
     }
+
     const val PROJECT_ID = "project1"
     const val MODULE_ID = "module1"
     const val ATTENDANT_ID = "attendant1"

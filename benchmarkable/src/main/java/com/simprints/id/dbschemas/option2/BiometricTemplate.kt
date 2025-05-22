@@ -6,12 +6,14 @@ import androidx.room.PrimaryKey
 
 @Entity(
     indices = [
-        Index(value = ["projectId", "format", "createdAt", "subjectId"]),
+        Index(value = ["projectId", "format", "subjectId"]),
+        Index(value = ["subjectId", "format"]),
     ]
 )
 @Suppress("ArrayInDataClass")
 data class BiometricTemplate(
-    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    @PrimaryKey(autoGenerate = true)
+    val id: Long=0,
     val subjectId: String,
     val projectId: String,
     val moduleId: String?,

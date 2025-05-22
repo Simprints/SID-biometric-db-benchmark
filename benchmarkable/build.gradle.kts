@@ -3,11 +3,12 @@ plugins {
     id("kotlin-android")
     alias (libs.plugins.ksp)
     alias(libs.plugins.room)
+    alias(libs.plugins.realm)
 }
 
 android {
     compileSdk = 35
-    namespace = "com.example.benchmark.ui"
+    namespace = "com.example.benchmark"
 
     defaultConfig {
         minSdk = 32
@@ -34,6 +35,8 @@ dependencies {
     implementation(libs.recyclerview)
     implementation(libs.room.core)
     implementation(libs.room.ktx)
+    api(libs.realm.base)
+
     ksp(libs.room.compiler)
     implementation(libs.sqlCipher)
 

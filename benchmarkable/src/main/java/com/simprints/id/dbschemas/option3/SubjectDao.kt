@@ -26,8 +26,8 @@ interface SubjectDao {
             SELECT s.subjectId
             FROM Subject s
             INNER JOIN FormatLookup m ON s.subjectId = m.subjectId
-            WHERE m.format = :format AND s.projectId = :projectId             
-            ORDER BY s.createdAt
+            WHERE s.projectId = :projectId   and m.format = :format            
+            ORDER BY s.subjectId
             LIMIT :limit OFFSET :offset
         ) AS filterSubjects
         ON b.subjectId = filterSubjects.subjectId and b.format = :format

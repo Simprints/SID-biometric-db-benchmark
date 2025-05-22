@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 @Entity(
     indices = [
         Index(value = ["projectId", "subjectId"]),
-        Index(value = ["projectId", "subjectId", "createdAt"])
     ]
 )
 data class Subject(

@@ -5,7 +5,10 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 
 @Entity(
-    indices = [Index(value = ["projectId", "subjectId"])]
+    indices = [
+     //   Index(value = ["projectId"]),
+        Index(value = ["projectId", "subjectId"]),
+    ]
 )
 data class Subject(
     @PrimaryKey val subjectId: String,

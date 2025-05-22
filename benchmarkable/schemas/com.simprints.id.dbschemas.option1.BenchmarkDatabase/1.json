@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "3f839ae9c93fb00405af61bf56047efc",
+    "identityHash": "0c36df0fe18cfe225cad8877bbf33cea",
     "entities": [
       {
         "tableName": "Subject",
@@ -106,15 +106,6 @@
             ],
             "orders": [],
             "createSql": "CREATE INDEX IF NOT EXISTS `index_BiometricTemplate_format_subjectId` ON `${TABLE_NAME}` (`format`, `subjectId`)"
-          },
-          {
-            "name": "index_BiometricTemplate_subjectId",
-            "unique": false,
-            "columnNames": [
-              "subjectId"
-            ],
-            "orders": [],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_BiometricTemplate_subjectId` ON `${TABLE_NAME}` (`subjectId`)"
           }
         ],
         "foreignKeys": [
@@ -134,7 +125,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3f839ae9c93fb00405af61bf56047efc')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0c36df0fe18cfe225cad8877bbf33cea')"
     ]
   }
 }

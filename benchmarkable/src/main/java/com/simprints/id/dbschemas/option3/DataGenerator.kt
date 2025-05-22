@@ -6,10 +6,10 @@ import kotlin.random.Random
 object DataGenerator {
 
 
-    fun generateSubjectsAndTemplates(count: Int): Pair<List<Subject>, List<BiometricTemplate>> {
+    fun generateAndInsertSubjectsAndTemplates(count: Int, dao: SubjectDao) {
         val subjects = mutableListOf<Subject>()
         val templates = mutableListOf<BiometricTemplate>()
-
+        val lookups = mutableListOf<FormatLookup>()
         repeat(count) {
             val subjectId = UUID.randomUUID().toString()
             val projectId = PROJECT_ID
@@ -52,31 +52,36 @@ object DataGenerator {
                     )
                 )
             }
-        }
 
-
-        return Pair(subjects, templates)
-    }
-
-    fun generateLookup(subjects: List<Subject>): List<FormatLookup> {
-        val lookups = mutableListOf<FormatLookup>()
-        subjects.forEach { subject ->
             lookups.add(
                 FormatLookup(
-                    subjectId = subject.subjectId,
+                    subjectId = subjectId,
                     format = ROC_FORMAT,
                 )
             )
 
             lookups.add(
                 FormatLookup(
-                    subjectId = subject.subjectId,
+                    subjectId = subjectId,
                     format = NEC_FORMAT,
                 )
             )
-
+            // insert every 5000 subjects and clear the list
+            if (it % 5000 == 0) {
+                dao.insertSubjects(subjects)
+                dao.insertTemplates(templates)
+                dao.insertFormatLookup(lookups)
+                templates.clear()
+                lookups.clear()
+                subjects.clear()
+            }
         }
-        return lookups
+//        // Insert remaining items
+        if (templates.isNotEmpty()) {
+            dao.insertSubjects(subjects)
+            dao.insertTemplates(templates)
+            dao.insertFormatLookup(lookups)
+        }
     }
 
     const val PROJECT_ID = "project1"

@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "b22e760c0c6a5a1cb60a5597a081f4f9",
+    "identityHash": "9821b2b7e42a59df21d2553d587ebf28",
     "entities": [
       {
         "tableName": "BiometricTemplate",
@@ -68,23 +68,32 @@
         },
         "indices": [
           {
-            "name": "index_BiometricTemplate_projectId_format_createdAt_subjectId",
+            "name": "index_BiometricTemplate_projectId_format_subjectId",
             "unique": false,
             "columnNames": [
               "projectId",
               "format",
-              "createdAt",
               "subjectId"
             ],
             "orders": [],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_BiometricTemplate_projectId_format_createdAt_subjectId` ON `${TABLE_NAME}` (`projectId`, `format`, `createdAt`, `subjectId`)"
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_BiometricTemplate_projectId_format_subjectId` ON `${TABLE_NAME}` (`projectId`, `format`, `subjectId`)"
+          },
+          {
+            "name": "index_BiometricTemplate_subjectId_format",
+            "unique": false,
+            "columnNames": [
+              "subjectId",
+              "format"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_BiometricTemplate_subjectId_format` ON `${TABLE_NAME}` (`subjectId`, `format`)"
           }
         ]
       }
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b22e760c0c6a5a1cb60a5597a081f4f9')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9821b2b7e42a59df21d2553d587ebf28')"
     ]
   }
 }

@@ -1,31 +1,33 @@
 package com.simprints.id.dbschemas.option1
 
-import java.util.*
+import java.util.UUID
 import kotlin.random.Random
 
 object DataGenerator {
 
 
-
-    fun generateSubjectsAndTemplates(count: Int): Pair<List<Subject>, List<BiometricTemplate>> {
-        val subjects = mutableListOf<Subject>()
+    fun generateAndInsertSubjectsAndTemplates(count: Int, dao: SubjectDao) {
         val templates = mutableListOf<BiometricTemplate>()
 
         repeat(count) {
             val subjectId = UUID.randomUUID().toString()
             val projectId = PROJECT_ID
             val moduleId = MODULE_ID
-            val attendantId =ATTENDANT_ID
+            val attendantId = ATTENDANT_ID
             val createdAt = System.currentTimeMillis()
 
             // Add subject
-            subjects.add( Subject(
-                subjectId = subjectId,
-                projectId = projectId,
-                moduleId = moduleId,
-                attendantId = attendantId,
-                createdAt = createdAt
-            ))
+            dao.insertSubjects(
+                listOf(
+                    Subject(
+                        subjectId = subjectId,
+                        projectId = projectId,
+                        moduleId = moduleId,
+                        attendantId = attendantId,
+                        createdAt = createdAt
+                    )
+                )
+            )
             // 2 ROC templates (fingerPosition = null)
             repeat(2) {
                 templates.add(
@@ -51,11 +53,21 @@ object DataGenerator {
                     )
                 )
             }
+
+            // insert every 5000 subjects and clear the list
+            if (it % 5000 == 0) {
+                dao.insertTemplates(templates)
+                templates.clear()
+                println("Inserted subject: $subjectId with ${templates.size} templates")
+            }
+
         }
-
-
-        return Pair(subjects, templates)
+        // insert remaining templates
+        if (templates.isNotEmpty()) {
+            dao.insertTemplates(templates)
+        }
     }
+
     const val PROJECT_ID = "project1"
     const val MODULE_ID = "module1"
     const val ATTENDANT_ID = "attendant1"

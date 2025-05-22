@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "0564cd5cfd6bd95c8bd393439ed7836c",
+    "identityHash": "1093bd5f3176544d320a67abd2a2a472",
     "entities": [
       {
         "tableName": "Subject",
@@ -53,17 +53,6 @@
             ],
             "orders": [],
             "createSql": "CREATE INDEX IF NOT EXISTS `index_Subject_projectId_subjectId` ON `${TABLE_NAME}` (`projectId`, `subjectId`)"
-          },
-          {
-            "name": "index_Subject_projectId_subjectId_createdAt",
-            "unique": false,
-            "columnNames": [
-              "projectId",
-              "subjectId",
-              "createdAt"
-            ],
-            "orders": [],
-            "createSql": "CREATE INDEX IF NOT EXISTS `index_Subject_projectId_subjectId_createdAt` ON `${TABLE_NAME}` (`projectId`, `subjectId`, `createdAt`)"
           }
         ]
       },
@@ -170,7 +159,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0564cd5cfd6bd95c8bd393439ed7836c')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1093bd5f3176544d320a67abd2a2a472')"
     ]
   }
 }
